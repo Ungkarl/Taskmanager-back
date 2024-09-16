@@ -1,54 +1,15 @@
-```
-Media College Denmark
-```
+# TaskManager
 
-# Kom igang.
+This project was recently completed as part of my final assignments leading up to my exams. The task was to create a "task manager" using the React framework, functioning as a back-office where an admin can manage tasks and assign them to different employees. The project features admin/user login functionality and the ability to view, add, and assign tasks.
 
-Følg følgende trin.
+The backend is fully functional, while the frontend still needs a few final touches. You can find the frontend here: [TaskManager Frontend](https://github.com/Ungkarl/taskmanager-front). Both the frontend and backend are required to see the full result.
 
-## 1. Opret en .env og .env.local fil i roden af projektet.
+Here’s how to set up the backend. It requires a local MongoDB installation on your computer.
 
-Indsæt dette indhold:
-```
-# Secret Variables for use in Server Application.
-NODE_ENV=development
+## Getting Started
 
-SERVER_PORT=3042
-SERVER_HOST=http://localhost:3042
+Follow these steps:
 
-MONGODB_URI=mongodb://127.0.0.1:27017/mcdm-takmanager
+### 1. Create a `.env` and `.env.local` file in the root of the project.
 
-# JWT
-JWT_EXPIRES_IN="1t"
-JWT_SECRET="8e18fa26acc704d3ca37fea29e17e8e024423a7c3eab4b76390a94ac579c20f0"
-```
-
-## 2. Kør Seed in NPM Scripts.
-
-Tryk på knappen i 'NPM Script' i visual kode.
-
-Eller benyt kommandoen
-
-```
-npm run seedAll
-```
-
-## 3. Opret et lokalt branch.
-
-Opret og skift til ey lokalt branch du kalder feks. "dev-server".
-
-## 4. Åbn Mongo Compass.
-
-Åbn Mongo Compass og se din "mcdm-takmanager".
-
-## 5. Start serveren.
-
-Kør "start" i 'NPM Script' i visual kode.
-
-## 6. Åbn Postman.
-
-Importér 'postman_01.json' som "Backend Taskmanager".
-Opret et Taskmanager environment i post man og tilføj `api_local_path` og sæt den til `http://localhost:3042`.
-Opret også en `token` variabel og benyt den når du bruger "auth/signin".
-
-Test `Get Users` endpointet.
+Insert the following content:
